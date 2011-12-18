@@ -94,11 +94,9 @@ private:
 
 class Synth{
 private:
-	//std::vector<SinWaveGenerator *>sins_;
 	std::multimap<Byte, SinWaveGenerator*> notes_;	//notes and sins pair
 	
 	typedef std::multimap<Byte,SinWaveGenerator *>::iterator ite_type;
-	
 	
 public:
 	Synth(){}
