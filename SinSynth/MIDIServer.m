@@ -60,13 +60,11 @@ static void MIDIInputProc(const MIDIPacketList *packetList,
 -(void)onMIDIInput:(const MIDIPacketList *)packetList{
 	
 	//send it to delegate!
-	NSLog(@"MIDI Input Received");
 	if (delegate_){
 		if ([delegate_ respondsToSelector:@selector(midiReceived:)]){
-			//NSValue *pointer = [NSValue valueWithPointer:packetList]; 
-			//[delegate_ midiReceived:pointer];
+
 			[delegate_ midiReceived:packetList];
-			NSLog(@"sent delegation");
+			//NSLog(@"sent delegation");
 		}
 	}
 	

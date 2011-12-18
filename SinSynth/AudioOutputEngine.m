@@ -158,7 +158,7 @@ OSStatus MyRender( void                        *inRefCon,
 	//http://osdir.com/ml/cocoa-dev/2009-09/msg00672.html OK, don't care about auto_zone_thread_registration_error() in console log.
 	
 	static UInt32 count = 0;
-	if ((count % 100) == 0){
+	if ((count % 1000) == 0){
 		
 		NSLog(@"MyRender," 
 			  "%f bus number = %u, frames = %u,"

@@ -65,6 +65,10 @@ class Controller
 	end
 	
 	def awakeFromNib
+		#initMIDI(nil)
+		#initAudioEngine(nil)
+		#initSoundDelegate(nil)
+		#startAudioEngine(nil)
 		
 	end
 	
@@ -72,13 +76,11 @@ class Controller
 		@midiServer = MIDIServer.new
 		@midiServer.delegate = self
 		@midiServer.start
-		sender.enabled = false
 		
 	end
 	
 	def initSoundDelegate(sender)
 		@soundDelegate = SoundDelegate.new
-		@soundDelegate.synth = SinSynth.new
 		@midiServer.delegate = @soundDelegate
 		@audioEngine.delegate = @soundDelegate	
 		
