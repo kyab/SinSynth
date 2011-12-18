@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB7DF25D149CDEDE00A752C4 /* SoundDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB7DF25C149CDEDE00A752C4 /* SoundDelegate.mm */; };
 		EB8A3B3B149C923B00DC7C21 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8A3B3A149C923B00DC7C21 /* Cocoa.framework */; };
 		EB8A3B3D149C923B00DC7C21 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8A3B3C149C923B00DC7C21 /* MacRuby.framework */; };
 		EB8A3B44149C923B00DC7C21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB8A3B42149C923B00DC7C21 /* InfoPlist.strings */; };
@@ -14,19 +15,37 @@
 		EB8A3B4B149C923C00DC7C21 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB8A3B49149C923C00DC7C21 /* MainMenu.xib */; };
 		EB8A3B4E149C923C00DC7C21 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = EB8A3B4D149C923C00DC7C21 /* rb_main.rb */; };
 		EB8A3B50149C923C00DC7C21 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = EB8A3B4F149C923C00DC7C21 /* AppDelegate.rb */; };
+		EB8A3B5B149C927E00DC7C21 /* MIDIServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8A3B5A149C927E00DC7C21 /* MIDIServer.m */; };
+		EB8A3B5D149C92E600DC7C21 /* Controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = EB8A3B5C149C92E600DC7C21 /* Controller.rb */; };
+		EB8A3B67149CAEF800DC7C21 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8A3B66149CAEF800DC7C21 /* CoreMIDI.framework */; };
+		EB8A3B69149CAF1000DC7C21 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8A3B68149CAF1000DC7C21 /* CoreAudio.framework */; };
+		EB8A3B6B149CAF2000DC7C21 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8A3B6A149CAF2000DC7C21 /* CoreAudioKit.framework */; };
+		EB8A3B72149CB8FC00DC7C21 /* AudioOutputEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8A3B71149CB8FC00DC7C21 /* AudioOutputEngine.m */; };
+		EB8A3B77149CC51F00DC7C21 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8A3B76149CC51F00DC7C21 /* AudioUnit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB7DF25B149CDEDE00A752C4 /* SoundDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDelegate.h; sourceTree = "<group>"; };
+		EB7DF25C149CDEDE00A752C4 /* SoundDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SoundDelegate.mm; sourceTree = "<group>"; };
 		EB8A3B36149C923B00DC7C21 /* SinSynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinSynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8A3B3A149C923B00DC7C21 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EB8A3B3C149C923B00DC7C21 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		EB8A3B41149C923B00DC7C21 /* SinSynth-Info.plist */ = {isa = PBXFileReference; path = "SinSynth-Info.plist"; sourceTree = "<group>"; };
+		EB8A3B41149C923B00DC7C21 /* SinSynth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SinSynth-Info.plist"; sourceTree = "<group>"; };
 		EB8A3B43149C923B00DC7C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB8A3B45149C923B00DC7C21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB8A3B47149C923B00DC7C21 /* SinSynth-Prefix.pch */ = {isa = PBXFileReference; path = "SinSynth-Prefix.pch"; sourceTree = "<group>"; };
+		EB8A3B47149C923B00DC7C21 /* SinSynth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinSynth-Prefix.pch"; sourceTree = "<group>"; };
 		EB8A3B4A149C923C00DC7C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EB8A3B4D149C923C00DC7C21 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		EB8A3B4F149C923C00DC7C21 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		EB8A3B59149C927E00DC7C21 /* MIDIServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIServer.h; sourceTree = "<group>"; };
+		EB8A3B5A149C927E00DC7C21 /* MIDIServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIServer.m; sourceTree = "<group>"; };
+		EB8A3B5C149C92E600DC7C21 /* Controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Controller.rb; sourceTree = "<group>"; };
+		EB8A3B66149CAEF800DC7C21 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		EB8A3B68149CAF1000DC7C21 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EB8A3B6A149CAF2000DC7C21 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		EB8A3B70149CB8FC00DC7C21 /* AudioOutputEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutputEngine.h; sourceTree = "<group>"; };
+		EB8A3B71149CB8FC00DC7C21 /* AudioOutputEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutputEngine.m; sourceTree = "<group>"; };
+		EB8A3B76149CC51F00DC7C21 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8A3B77149CC51F00DC7C21 /* AudioUnit.framework in Frameworks */,
+				EB8A3B6B149CAF2000DC7C21 /* CoreAudioKit.framework in Frameworks */,
+				EB8A3B69149CAF1000DC7C21 /* CoreAudio.framework in Frameworks */,
+				EB8A3B67149CAEF800DC7C21 /* CoreMIDI.framework in Frameworks */,
 				EB8A3B3B149C923B00DC7C21 /* Cocoa.framework in Frameworks */,
 				EB8A3B3D149C923B00DC7C21 /* MacRuby.framework in Frameworks */,
 			);
@@ -62,6 +85,10 @@
 		EB8A3B39149C923B00DC7C21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB8A3B76149CC51F00DC7C21 /* AudioUnit.framework */,
+				EB8A3B6A149CAF2000DC7C21 /* CoreAudioKit.framework */,
+				EB8A3B68149CAF1000DC7C21 /* CoreAudio.framework */,
+				EB8A3B66149CAEF800DC7C21 /* CoreMIDI.framework */,
 				EB8A3B3A149C923B00DC7C21 /* Cocoa.framework */,
 				EB8A3B3C149C923B00DC7C21 /* MacRuby.framework */,
 			);
@@ -72,6 +99,13 @@
 			isa = PBXGroup;
 			children = (
 				EB8A3B4F149C923C00DC7C21 /* AppDelegate.rb */,
+				EB8A3B5C149C92E600DC7C21 /* Controller.rb */,
+				EB7DF25B149CDEDE00A752C4 /* SoundDelegate.h */,
+				EB7DF25C149CDEDE00A752C4 /* SoundDelegate.mm */,
+				EB8A3B71149CB8FC00DC7C21 /* AudioOutputEngine.m */,
+				EB8A3B70149CB8FC00DC7C21 /* AudioOutputEngine.h */,
+				EB8A3B59149C927E00DC7C21 /* MIDIServer.h */,
+				EB8A3B5A149C927E00DC7C21 /* MIDIServer.m */,
 				EB8A3B48149C923C00DC7C21 /* Resources */,
 				EB8A3B4C149C923C00DC7C21 /* Other Sources */,
 				EB8A3B40149C923B00DC7C21 /* Supporting Files */,
@@ -177,6 +211,7 @@
 				EB8A3B4B149C923C00DC7C21 /* MainMenu.xib in Resources */,
 				EB8A3B4E149C923C00DC7C21 /* rb_main.rb in Resources */,
 				EB8A3B50149C923C00DC7C21 /* AppDelegate.rb in Resources */,
+				EB8A3B5D149C92E600DC7C21 /* Controller.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8A3B46149C923B00DC7C21 /* main.m in Sources */,
+				EB8A3B5B149C927E00DC7C21 /* MIDIServer.m in Sources */,
+				EB8A3B72149CB8FC00DC7C21 /* AudioOutputEngine.m in Sources */,
+				EB7DF25D149CDEDE00A752C4 /* SoundDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +310,7 @@
 				GCC_PREFIX_HEADER = "SinSynth/SinSynth-Prefix.pch";
 				INFOPLIST_FILE = "SinSynth/SinSynth-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -288,6 +327,7 @@
 				GCC_PREFIX_HEADER = "SinSynth/SinSynth-Prefix.pch";
 				INFOPLIST_FILE = "SinSynth/SinSynth-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -323,6 +363,7 @@
 				EB8A3B55149C923C00DC7C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB8A3B56149C923C00DC7C21 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -331,6 +372,7 @@
 				EB8A3B58149C923C00DC7C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
